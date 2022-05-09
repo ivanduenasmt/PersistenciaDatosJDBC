@@ -15,11 +15,11 @@ public class Mensajes {
         this.fechaMensaje = fechaMensaje;
     }
 
-    public int getIdMensaje() {
+    public Integer getIdMensaje() {
         return idMensaje;
     }
 
-    public void setIdMensaje(int idMensaje) {
+    public void setIdMensaje(Integer idMensaje) {
         this.idMensaje = idMensaje;
     }
 

@@ -20,18 +20,16 @@ public class Inicio {
 
             switch(opcion){
                 case 1:
-                    MensajesService.crearMensajeDb();
+                    MensajesService.crearMensaje();
                     break;
                 case 2:
                     MensajesService.leerMensajes();
                     break;
                 case 3:
-                    MensajesService.borrarMensajeDb();
+                    MensajesService.borrarMensaje();
                     break;
                 case 4:
-                    MensajesService.actualizarMensajeDb();
-                    break;
-                case 5:
+                    MensajesService.actualizarMensaje();
                     break;
                 default:
                     break;
