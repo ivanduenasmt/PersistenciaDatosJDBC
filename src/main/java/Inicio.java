@@ -13,8 +13,8 @@ public class Inicio {
             System.out.println("Aplicación de mensajes");
             System.out.println("1. Crear mensaje");
             System.out.println("2. Listar mensajes");
-            System.out.println("3. Editar mensaje");
-            System.out.println("4. Eliminar mensaje");
+            System.out.println("3. Eliminar mensaje");
+            System.out.println("4. Editar mensaje");
             System.out.println("5. Salir");
             opcion = sc.nextInt();
 
@@ -35,16 +35,5 @@ public class Inicio {
                     break;
             }
         }while(opcion != 5);
-
-
-        /*Conexion conexion = new Conexion();
-
-        try(Connection cnx = conexion.getConnection()) {
-
-        }catch(Exception e){
-            System.out.println(e);
-
-        }*/
-
     }
 }

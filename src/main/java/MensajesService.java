@@ -14,7 +14,7 @@ public class MensajesService {
         String nombre = sc.nextLine();
 
         Mensajes registro = new Mensajes();
-        registro.setMensajes(mensaje);
+        registro.setMensaje(mensaje);
         registro.setAutorMensaje(nombre);
 
         MensajesDataAccessObject.crearMensajeDb(registro);
@@ -26,10 +26,23 @@ public class MensajesService {
     }
 
     public static void borrarMensaje(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Indica el id del mensaje a borrar");
+        int idMensaje = sc.nextInt();
+        MensajesDataAccessObject.borrarMensajeDb(idMensaje);
 
     }
 
     public static void actualizarMensaje(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Escribe tu nuevo mensaje");
+        String mensaje = sc.nextLine();
 
+        System.out.println("Escribe el id del mensaje que vas a actualizar");
+        int idMensaje = sc.nextInt();
+        Mensajes actualizado = new Mensajes();
+        actualizado.setIdMensaje(idMensaje);
+        actualizado.setMensaje(mensaje);
+        MensajesDataAccessObject.actualizarMensajeDb(actualizado);
     }
 }

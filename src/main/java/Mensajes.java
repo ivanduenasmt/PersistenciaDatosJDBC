@@ -2,33 +2,33 @@
  * Clase modelo*/
 public class Mensajes {
 
-    Integer idMensaje;
-    String mensajes;
+    int idMensaje;
+    String mensaje;
     String autorMensaje;
     String fechaMensaje;
 
     public Mensajes(){}
 
-    public Mensajes(String mensajes, String autorMensaje, String fechaMensaje) {
-        this.mensajes = mensajes;
+    public Mensajes(String mensaje, String autorMensaje, String fechaMensaje) {
+        this.mensaje = mensaje;
         this.autorMensaje = autorMensaje;
         this.fechaMensaje = fechaMensaje;
     }
 
-    public Integer getIdMensaje() {
+    public int getIdMensaje() {
         return idMensaje;
     }
 
-    public void setIdMensaje(Integer idMensaje) {
+    public void setIdMensaje(int idMensaje) {
         this.idMensaje = idMensaje;
     }
 
-    public String getMensajes() {
-        return mensajes;
+    public String getMensaje() {
+        return mensaje;
     }
 
-    public void setMensajes(String mensajes) {
-        this.mensajes = mensajes;
+    public void setMensaje(String mensaje) {
+        this.mensaje = mensaje;
     }
 
     public String getAutorMensaje() {
